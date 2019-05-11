@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body style="height: 1000px">
+  <div style="height: 50px; background-color: black" class="js-main"></div>
+  <div style="height: 30px; background-color: cornflowerblue" class="js-main2"></div>
+  <button class="js-btn">ボタン</button>
+</body>
+<script
+    src="https://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+<script type="text/javascript">
+  $('.js-btn').on('click',function(){
+      $("html,body").animate({scrollTop:50});
+
+     // const height = $('.js-main2').offset();
+     // debugger
+     //  alert(height);
+     //  console.log( height );
+  });
+</script>
+</html>
